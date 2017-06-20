@@ -1,40 +1,89 @@
-header {
-    height: 35.2em;
-    border:1px solid black;
 
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
+
+
+header {
+    background: url(oskar.png) no-repeat center top / cover;
+    height: 35.2em;
+    border: 1px solid black;
 }
+
+.clearfix {
+    content:'';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
 .container {
-    width: 47%;
+    width: 60%;
     padding: 0px;
     margin-left:13%;
+    color:white;
 }
 
 #header-title {
-    margin-top: 6.5em;
-    
+    margin-top: 6.3em;
+
 }
 
 #header-title h1 {
     margin: 0px;
-    font-size: 60px;
+    font-size: 58px;
+    font-family: 'Lato';
+    font-weight: bold;
+    padding-left: 5px;
 }
 
 #header-title p {
     font-size: 30px;
+    padding-top: 5px;
+    padding-left: 5px; 
     margin: 0px;
+    line-height: 1.2;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 100;
 }
 #header-title div {
-    margin-top: 25px;
+    margin-top: 1em;
+    overflow: hidden;
+    padding: 0px;
+}
 
+#header-title .meta  {
+    padding: 0px;
+    color: #b2aba7;
+}
+
+#header-title .meta div {
+    float:left;
+    font-family: 'Lato' sans-serif;
+    padding: 0px;
+    margin-top:0px;
+    font-size: 16px;
+    
+}
+
+#header-title .meta div:nth-child(1){
+    margin-left:0.2em;
+}
+#header-title .meta div:nth-child(2){
+    margin-top: 0.5em;
+    margin-left:0.8em;
+}
+#header-title .meta div:nth-child(3){
+    margin-left:2em;
+    margin-top: 0.5em;
 }
 nav {
     width: 100%;
+    
 }
 #menu-bar {
     float:left;
     display: block;
     padding: 0px;
-    margin-top:13.5em;
+    margin-top:13em;
 }
 
 #menu-bar li {
@@ -46,13 +95,15 @@ nav {
 #menu-bar li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: #b2aba7;
+    font-size: 14px;
+    font-family: 'Lato';
 }
 
 #show-more {
     height: 2.3em;
-    border-bottom:1px solid black;
     padding-top:1.2em;
+    background-color: #cfbb95;
 }
 
 #show-more div{
@@ -63,7 +114,10 @@ nav {
 #show-more div a{
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color:#f1ebdf;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 16px;
 }
 
 #wrapper {
@@ -75,3 +129,17 @@ nav {
 article {
     margin-top:100px;
 }
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
