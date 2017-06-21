@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
 
+@font-face {font-family:"Lato Regular";src:url("fonts/Lato-Regular.eot?") format("eot"),url("fonts/Lato-Regular.woff") format("woff"),url("fonts/Lato-Regular.ttf") format("truetype"),url("fonts/Lato-Regular.svg#Lato-Regular") format("svg");font-weight:normal;font-style:normal;}
+
 
 @font-face {
     font-family: "MyriadProRegular";
@@ -62,10 +64,16 @@
     font-weight: normal;
 }
 
+body {
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+}
 
-header {
+.header {
     background: url(oskar.png) no-repeat center top / cover;
-    height: 35.2em;
+    max-height: 35.2em;
+    overflow: hidden;
     border: 1px solid black;
 }
 
@@ -77,14 +85,22 @@ header {
 }
 
 .container {
-    width: 47%;
+    width: 48%;
     padding: 0px;
     margin-left:13%;
     color:white;
 }
 
+
+
+/* Хеддер начало */
+
+
+
+
+
 #header-title {
-    margin-top: 6.3em;
+    margin-top: 6.2em;
 
 }
 
@@ -92,19 +108,20 @@ header {
     margin: 0px;
     font-size: 58px;
     font-family: 'Lato';
-    font-weight: bold;
+    font-weight: 800;
     padding-left: 5px;
+    letter-spacing: -0.006em;
 }
 
 #header-title p {
     font-size: 30px;
-    border: 1px solid black;
-    padding-top: 7px;
+    padding-top: 8px;
     padding-left: 5px; 
     margin: 0px;
     line-height: 1.2;
     font-family: 'MyriadProRegular';
     font-weight: 100;
+    letter-spacing: 0.359px;
     font-stretch: ultra-expanded;
 }
 #header-title div {
@@ -116,14 +133,14 @@ header {
 #header-title .meta  {
     padding: 0px;
     color: #b2aba7;
+    font-family:'MyriadProRegular';
 }
 
 #header-title .meta div {
     float:left;
-    font-family: 'Lato' sans-serif;
     padding: 0px;
     margin-top:0px;
-    font-size: 16px;
+    font-size:1.06em;
     font-stretch: ultra-expanded;
 }
 
@@ -135,18 +152,26 @@ header {
     margin-left:0.8em;
 }
 #header-title .meta div:nth-child(3){
-    margin-left:2em;
+    margin-left:2.2em;
     margin-top: 0.5em;
 }
 nav {
     width: 100%;
     
 }
+
+nav > li > img {
+    margin-top: 9px;
+    filter: brightness(0);
+    color: #cfbb95;
+    
+}
 #menu-bar {
     float:left;
     display: block;
     padding: 0px;
-    margin-top:13em;
+    margin-top: 24%;
+    margin-bottom: 7%;
 }
 
 #menu-bar li {
@@ -160,8 +185,15 @@ nav {
     text-transform: uppercase;
     color: #b2aba7;
     font-size: 14px;
-    font-family: 'Lato';
+    font-family: 'Lato Regular';
 }
+
+
+/* Хеддер конец*/
+
+
+/* Show More начало */
+
 
 #show-more {
     height: 2.3em;
@@ -183,14 +215,57 @@ nav {
     font-size: 16px;
 }
 
+/* Show More конец */
+
+
+/* wrapper начало */
+
+
+
 #wrapper {
     margin-left: 24%;
     width: 52%;
-    border:1px solid black;
+    margin-top: 2.7em;
+    
 }
 
-article {
-    margin-top:100px;
+#wrapper article:nth-child(2) {
+
+    margin-top: 90px;
+    
+}
+#wrapper article:nth-child(3) {
+
+    margin-top: 92px;
+    
+}
+.article {
+    margin-top: 43px;
+}
+
+
+.articletitle
+{
+ padding: 0px;
+ font-family:'Lato';
+ 
+}
+.articletext
+{   margin-top: 1.2em;
+	font-family:'Lato Regular';
+    text-align:justify;
+    font-weight: lighter;
+    
+}
+.articletext p{
+    letter-spacing: -0.003em;
+}
+
+
+.articleinfo img
+{
+	float:left;
+	
 }
 
 article img {
@@ -198,25 +273,49 @@ article img {
     height: auto;
 }
 
+#interstellar 
+{
+    margin-top: 25px;
+    margin-bottom:0px;
+    margin-right:30px;
+}
+
 .articletitle
 {
  font-family:'Lato';
- 
+ margin-top:30px;
+ font-size: 20px;
+
+}
+.articletitle h3
+{
+    margin:0;
+    word-spacing: 0.11em;
 }
 .articletext
 {
 	font-family:'Lato';
+    margin-top:15px;
+    font-size:18px;
+    line-height:30px;
+    word-spacing: 0.05em;
+    
 }
-
+#firstart
+{
+margin-top:40px;
+margin-left:65px;
+}
 .articleinfo
 {
-	margin-top:44px;
+	margin-top:35px;
 	
 	padding:0;
 	margin:0;
 	display:block;
 	font-family:'MyriadProRegular';
 	font-weight:100;
+    
 	
 	
 }
@@ -225,18 +324,28 @@ article img {
 	float:left;
 	display:block;
 	margin-right:5%;
-	font-size:14px;
-	
+	font-size:15px;
+    margin-top:4px;
+    margin-left:5px;
+	margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.5;
 }
 
-.articleinfo img
+.fullarticleinfo img
 {
 	float:left;
-	
+	height: 21px;
+    width: 21px;
+}
+
+
+
+.fullarticleinfo {
+    overflow: hidden;
 }
 
 
 
 
-
-
+/* wrapper конец */
