@@ -119,7 +119,7 @@ body {
     padding: 0px;
     color: white;
     font-family:'LatoLight';
-    margin-top:20px;
+    margin-top:16px;
 }
 
 #header-title .meta div {
@@ -130,9 +130,13 @@ body {
     padding-top: 5px;
 }
 
+#header-title .meta #text {
+    margin-top: 5px;
+}
 
 #avatar img{
     border-radius: 3px;
+    margin-top:0px;
 }
 #header-title .meta #author {
     margin-top:0; 
@@ -228,7 +232,11 @@ nav ul {
 }
 
 #wrapper article:nth-child(n+2){
-    margin-top: 95px;
+    margin-top: 90px;
+}
+
+#wrapper article:nth-child(4) .articletext {
+    margin-top: 18px;
 }
 
 .articletitle {
@@ -246,7 +254,20 @@ nav ul {
     line-height:30px;
 }
 
+.article-img {
+    margin-top:25px;
+    margin-left: 1px;
+    padding: 0px;
+}
+.article-imgs {
+    margin-top:26px;
+    margin-left: 1px;
+    padding: 0px;
+}
+.article-imgs img:nth-child(n+2){
+    margin-left:20px;
 
+}
 .articleinfo {
     overflow: hidden;   
     margin: 0;
@@ -275,3 +296,25 @@ nav ul {
 .articleinfo li img {
     border-radius: 3px;
 }
+
+
+
+Hello Andrey,Dmitry
+
+What I was working on today:
+1. Continued to make site based on psd(Develop of "header" and a piece "wrapper").
+2  Has deepened the knowledge Adobe Photoshop.
+2. Has deepened the knowledge HTML5,CSS.
+
+Tomorrow I'm going to work on
+1. Make site based on psd(Complete of "wrapper").
+2. Improve knowledge of HTML5,CSS.
+
+Regards,
+Aleksey Sakevich
+Intern
+ 
+Dunice
+https://dunice.net/
+a.sakevich@dunice.net
+Skype:a.sakevich
