@@ -3,10 +3,10 @@
     <head>
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    
+    <link rel="stylesheet" href="index.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
-
+    
     <meta charset="utf-8" />
     
     <title>Макет</title>
@@ -14,39 +14,39 @@
     </head>
     <body>
     
-        
         <header class="header">
             <div class="container">
                 <div id="header-title">
                     <h1>The Oscars 2015</h1>
                     <p>An annual American awards ceremony honoring cinematic  achievements in the film industry</p>
                     <div class="meta clearfix">
-                        <div><img src="author.png" alt="" width="30px" height="30px"></div>
-                        <div>
-                            
-                            Mike Williams
+                        <div id='avatar'>
+                            <img src="author.png" alt="" width="25px" height="25px">
                         </div>
-                        <div>Jan. 22, 3:45 pm</div>
+                        <div>
+                            <span id="author">Mike Williams</span>
+                            <span id="date">Jan. 22, 3:45 pm</span>
+                        </div>
                     </div>
 
                 </div>
                 <nav id="menu-bar">
                     <ul>
                         <li>
-                            <img src="icon-1.png" alt="" width="15px" height="15px" >
-                            <a href="#">Newest</a>   
+                            <img src="icon-1.png" alt="" >   
+                            <div><a href="#">Newest</a></div>
                         </li>
                         <li>
                             <img src="icon-2.png" alt="">
-                            <a href="#">Embed</a>
+                            <div><a href="#">Embed</a></div>
                         </li>
                         <li>
-                            <img src="icon-3.png" alt="">
-                            <a href="#">Share</a>     
+                            <img src="icon-3.png" alt=""> 
+                            <div><a href="#">Share</a> </div>
                         </li>
-                        <li>
-                            <img src="" alt="" width="15px" height="15px">
-                            <a href="#">Donate</a> 
+                        <li> 
+                           <img src="icon-4.png" alt="">
+                           <div><a href="#">Donate</a> </div>
                         </li>
                     </ul>
                 </nav>
@@ -64,13 +64,13 @@
                         <p>Eddie Redmayne pulled ahead of his rivals in the race for the best actor Oscar when he won
                             a Screen <br> Actor's Guild award for his role as Stephen Hawking in The Theory of Everything
                             on Sunday night. The <br>32-year-old actor beat rivals Benedict Cumberbatch, Steve Carell,
-                            Jake Gyllenhaal and Michael Keaton to the  prize for male actor in a leading role at the
+                            Jake Gyllenhaal and Michael Keaton to <br>the prize for male actor in a leading role at the
                             ceremony in Los Angeles.
                         </p>
                     </div>
-                    <div class="fullarticleinfo">
+                    <div class="fullarcticleinfo">
                         <ul class="articleinfo"> 
-                            <li><img src="guardian.png" alt="" width="15px" height="15px"></li>
+                            <li><img src="guardian.png" alt="" width="21px" height="21px"></li>
                             <li><span>The Guardian</span></li>
                             <li><span>Jan 27, 11:15 pm</span></li>
                             <li><span>Los Angeles</span></li>
@@ -89,8 +89,8 @@
                        </p>
                    </div>
                   <div class="fullarticleinfo">
-                        <img src="nyt.png">
                         <ul class="articleinfo">
+                            <li><img src="nyt.png" width="21px" height="21px"></li>
                             <li><span>The New York Times</span></li>
                             <li><span>Jan 28, 4:30 pm</span></li>
                             <li><span>Los Angeles</span></li>
@@ -108,15 +108,19 @@
                        </p>
                    </div>
                   <div class="fullarticleinfo">
-                   <img src="t.png">
+                   
                     <ul class="articleinfo">
+                        <li><img src="t.png"></li>
                         <li><span>Time</span></li>
                         <li><span>Jan 28, 4:30 pm</span></li>
                         <li><span>The New York Times</span></li>
                     </ul>
                    </div>
                </article>
-            
         </section> 
     </body>
 </html>
+
+
+
+
