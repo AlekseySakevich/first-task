@@ -309,6 +309,10 @@ nav ul {
     margin-top: 33px;
     margin-left: 0px;
 }
+#wrapper article:nth-child(7) .articleinfo{
+    margin-top: 29px;
+    margin-left: 0px;
+}
 .articletitle {
     font-family:'LatoBold';
 }
@@ -542,4 +546,52 @@ a
 	background-color: #fff;
 	width: 218px;
 	border-radius:0 6px 6px 0;
+}
+.title {
+  margin-top:130px;
+  /* чтобы линии не выходили за ширину блока заголовка */
+  overflow: hidden;
+  text-align: center;
+  font-size:18px;
+  
+}
+.title:before,
+.title:after {
+  content: '';
+
+  /* делаем линию строчно-блочной */
+  display: inline-block;
+
+  /* выравниваем вертикально по середине */
+  vertical-align: middle;
+
+  /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+ 
+
+  /* установка ширины в 100% делает линию равной ширине тега заголовка
+  ** благодаря этому линия заполнит все свободное пространство
+  ** слева и справа от текста
+  */
+  width: 100%;
+  height: 2px;
+  background:black;
+  opacity: 0.5;
+
+  /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+  ** благодаря этому создается нужный отступ между линиями и текстом
+  */
+  border: solid #FFF;
+  border-width: 0 10px;
+}
+.title:before {
+  /* смещаем левую линию влево отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает слева от текста
+  */
+  margin-left: -80%;
+}
+.title:after {
+  /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает справа от текста
+  */
+  margin-right: -78%;
 }
