@@ -4,7 +4,7 @@
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <link rel="stylesheet" href="index.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
     
     <meta charset="utf-8" />
@@ -21,7 +21,7 @@
                     <p>An annual American awards ceremony honoring cinematic  achievements in the film industry</p>
                     <div class="meta clearfix">
                         <div id='avatar'>
-                            <img src="author.png" alt="" width="25px" height="25px">
+                            <img src="author.jpg" alt="" width="26px" height="26px">
                         </div>
                         <div id="text">
                             <span id="author">Mike Williams</span>
@@ -70,10 +70,16 @@
                     </div>
                     <div class="fullarcticleinfo">
                         <ul class="articleinfo"> 
-                            <li><img src="guardian.png" alt="" width="21px" height="21px"></li>
-                            <li><span>The Guardian</span></li>
-                            <li><span>Jan 27, 11:15 pm</span></li>
-                            <li><span>Los Angeles</span></li>
+                            <li>
+                                <div class="info">
+                                    <span class="info-item"><img src="guardian.jpg" alt="" width="21px" height="21px"></span>
+                                    <span class="info-author">The Guardian</span>
+                                </div>
+
+                            </li>
+                            
+                            <li><span class="info-date">Jan 27, 11:15 pm</span></li>
+                            <li><span class="info-place">Los Angeles</span></li>
                         </ul>
                     </div>
 
@@ -82,7 +88,7 @@
                    <div class="articletitle"><h3>Weekend Scrambles Top Oscar Prospects</h3></div>
                    <div class="articletext">
                        <p>An unexpected double win for Alejandro G. Iñárritu's "Birdman," at the expense of Richard Linklater's <br>
-                           "Boyhood", jolted the Oscar race over the weekend, even as
+                           "Boyhood," jolted the Oscar race over the weekend, even as
                            Harvey Weinstein made a bid to enhance his <br>
                            own contender, "The Imitation Game," as a filmic standard-bearer
                            against past injustices directed at gays.
@@ -90,16 +96,18 @@
                    </div>
                   <div class="fullarticleinfo">
                         <ul class="articleinfo">
-                            <li><img src="nyt.png" width="21px" height="21px"></li>
-                            <li><span>The New York Times</span></li>
-                            <li><span>Jan 28, 4:30 pm</span></li>
-                            <li><span>Los Angeles</span></li>
+                            <li class="info">
+                                <span class="info-item"><img src="nyt.jpg" width="21px" height="21px"></span>
+                                <span class="info-author">The New York Times</span>
+                            </li>
+                            <li><span class="info-date">Jan 28, 4:30 pm</span></li>
+                            <li><span class="info-place">Los Angeles</span></li>
                         </ul>
                    </div>
                </article>
                 <article>
                    <div class="articletitle"><h3>From 'American Sniper' to 'Whiplash' and everything in between</h3></div>
-                   <div class="article-img"><img id="interstellar" src="interstailar.png" alt=""></div>
+                   <div class="article-img"><img id="interstellar" src="interstailar.jpg" alt=""></div>
                    <div class="articletext">
                        <p>This year's Oscars nominations were announced Thursday morning and,
                            despite a few snubs and <br> surprises, the Best Picture nominees were
@@ -110,10 +118,12 @@
                   <div class="fullarticleinfo">
                    
                     <ul class="articleinfo">
-                        <li><img src="t.png" width="20px" height="20px"></li>
-                        <li><span>Time</span></li>
-                        <li><span>Jan 28, 1:30 pm</span></li>
-                        <li><span>New York</span></li>
+                        <li class="info">
+                            <span class="info-item"><img src="t.jpg" width="20px" height="20px"></span>
+                            <span class="info-author" >Time</span>
+                        </li>
+                        <li><span class="info-date">Jan 28, 1:30 pm</span></li>
+                        <li><span class="info-place">New York</span></li>
                     </ul>
                    </div>
                </article>
@@ -129,17 +139,122 @@
                         </p>
                     </div>
                     <div class="article-imgs">
-                        <img id="game" src="5_1.png" alt="">
-                        <img id="game" src="5_2.png" alt="">
-                        <img id="game" src="5_3.png" alt="">
+                        <img id="game" src="5_1.jpg" alt="">
+                        <img id="game" src="5_2.jpg" alt="">
+                        <img id="game" src="5_3.jpg" alt="">
                     </div>
                         <div class="fullarticleinfo">
                             <ul class="articleinfo">
-                                <li><img src="author.png" width="21px" height="21px"></li> 
-                                <li><span>Mike Williams</span></li>
-                                <li><span>Jan 26, 4:30 pm</span></li>
+                                <li class="info">
+                                    <span class="info-item"><img src="info-author.jpg" width="21px" height="21px"></span>
+                                    <span class="info-author">Mike Williams</span>
+                                </li> 
+                                <li><span class="info-date">Jan 26, 4:30 pm</span></li>
                             </ul>
                         </div>
+                </article>
+                <article>
+                    <div class="articletitle"><h3>Showing the Smarts to Play the Genius</h3></div>
+                    <div class="articletext">
+                        <p>With his wide forehead and high cheekbones, Benedict Cumberbatch has been
+                            compared, and not <br> unreasonably (especially if you've seen him in "August: Osage County"),
+                            both to an otter and to Sid the <br> Sloth from the animated movie "Ice Age". He also has one of those rumbling,
+                            mellifluous British voices <br> that are capable of revving up and whipping out dialogue, perfectly articulated,
+                            at breakneck speed. He <br>can talk faster than most people think. 
+                        </p>
+                    </div>
+                    <div class="fullarticleinfo">
+                        <ul class="articleinfo"> 
+                            <li class="info">
+                                <span class="info-item"><img src="nyt.png" width="21px" height="21px"></span>
+                                <span class="info-author">The New York Times</span>
+                            </li>
+                            <li><span class="info-date">Jan 25, 11:30 am</span></li>
+
+                        </ul>
+                        <ul class="comments"> 
+                              
+                             <li id="updownfull">
+                                    <span><a href=""><img src="up.png" height="20px"></span><a>
+                                    <span id="updown">25</span>                             
+                                    <span><a href="#"><img src="down.png" height="20px"></span><a>
+                                        
+                             </li>
+
+
+                             <li>
+                                    <a href="#"><img src="comment.png" >
+                                    <span>6 comments<span></a>
+                             </li>
+                             <li>
+                                    <a href="#"><span><img src="embed.png" ></span>
+                                    <span>Embed<span></a>
+                            </li>
+
+                             <li>
+                                    <div class="dropdown">
+                                    <span> <a href="#"><span><img src="share.png" ></span>
+                                    <span>Share<span></a></span>
+                                    <div class="dropdown-content">
+                                        
+                                    </div>
+                                    </div>
+                            </li>
+                             <li>
+                                 <a href="#"><span><img src="donate1.png"></span>
+                                 <span>Donate<span></a>
+                            </li>
+
+                    </ul>         
+                    </div>
+                </article>
+                <article id="sixdart">
+                    <div class="article-img"><img id="game" src="twitter.png" alt=""></div>
+                    <div class="fullarticleinfo">
+                        <ul class="articleinfo"> 
+                            <li class="info">
+                                <span class="info-item"><img src="author.png" height="21px" weight="21px"></span>
+                                <span class="info-author">Mike Williams</span>
+                            </li>
+                            <li><span class="info-date">Jan 24, 4:35 pm</span></li>
+                        </ul>
+                    </div>
+                </article>
+                <article>
+                    <div class="articletitle"><h3>Oscar-winning movie soundtracks from history</h3></div>    
+                        <div id="audioplayer">
+                                <div id="audiplayerinner">
+                                    <div id="pause">
+                                        <img src="pause.png">
+                                    </div>
+                                    <div id="rightside">
+                                    <div id="up">
+                                        <span id="ss">One Night Of Love - Victor Schertzinger and Gus Kahn</span>
+                                        <span id="sp">3:16</span>
+                                    </div>
+                                    <div id="down">
+                                    <div id="already"></div>
+                                    <div id="next"></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="articletext">
+                            <p>Discover all the winners of the prestigious Best 
+                                Original Score category at the Oscars - almost 80 years of <br>
+                                fantastic movie soundtracks.
+                            </p>
+                    </div>
+                     <div class="fullarticleinfo">
+                        <ul class="articleinfo">
+                            <li class="info">
+                                <span class="info-item"><img src="guardian.jpg" width="21px" height="21px"></span>
+                                 <span class="info-author">The Guardian</span>
+                            </li> 
+                            <li><span class="info-date">Jan 22, 20:22 pm</span></li>
+                            <li><span class="info-place">London</span></li>
+                        </ul>
+                    </div>
                 </article>
                 
         </section> 
