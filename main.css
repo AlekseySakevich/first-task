@@ -521,7 +521,7 @@ a
 .dropdown-content {
     display: none;
     position: absolute;
-    background:url(dropdown1.png) no-repeat;
+    background:url(templates/dropdown1.png) no-repeat;
     min-width: 110px;
     min-height: 165px;
     opacity: 1;
