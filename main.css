@@ -5,7 +5,20 @@ body {
     box-sizing: border-box;
 }
 
+@font-face {
+   font-family: LatoBold;
+   src: url(Lato-Bold.ttf);
+}
+@font-face {
+   font-family: LatoLight;
+   src: url(Lato-Light.ttf);
+}
+@font-face{
+   font-family: LatoRegular;
+   src: url(Lato-Regular.ttf);
+}
 
+/* Хеддер начало 
 	@font-face {
 			font-family: "LatoRegular";
 			src: url("fonts/LatoRegular/LatoRegular.eot");
@@ -65,7 +78,7 @@ body {
 			font-style: normal;
 			font-weight: normal;
 	}
-
+*/
 /* Хеддер начало */
 
 .header {
@@ -92,16 +105,16 @@ body {
 }
 
 #header-title {
-    margin-top: 106px;
+    margin-top: 100px;
     padding-right:420px;
 }
 
 #header-title h1 {
     margin: 0px;
-    font-size: 3.68em;
+    font-size: 60px;
     font-family: 'LatoBold';
     font-weight: 700;
-    letter-spacing: -0.017em;
+    letter-spacing: -0.023em;
 }
 
 #header-title p {
@@ -111,7 +124,8 @@ body {
     font-family: 'LatoLight';
     font-weight: 400;
     letter-spacing: -0.001em;
-    margin-top: 1px;
+    margin-top: 3px;
+    margin-left: 2px;
 }
 
 #header-title div {
@@ -122,9 +136,9 @@ body {
 
 #header-title .meta  {
     padding: 0px;
-    color: white;
-    font-family:'LatoLight';
-    margin-top:16px;
+    color:  rgba(255, 255, 255, 0.6);
+    font-family:'LatoRegular';
+    margin-top:18px;
 }
 
 #header-title .meta div {
@@ -133,11 +147,12 @@ body {
     font-size:16px;
     overflow: hidden;
     padding-top: 5px;
+    font-size: 16px;
 }
 
 #header-title .meta #text {
     margin-top: 5px;
-    letter-spacing: -0.002em;
+    letter-spacing: -0.01em;
 }
 
 #avatar img{
@@ -148,15 +163,12 @@ body {
 }
 #header-title .meta #author {
     margin-top: 0;
-    margin-left: 14px;
-    color:  rgba(255, 255, 255, 0.6);
+    margin-left: 13px;
 }
 #header-title .meta #date{
     margin-left: 36px;
     margin-top: 0.5em;
-    color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
-    opacity: 0.7;
 }
 
 
@@ -246,7 +258,7 @@ nav ul {
     padding-left: 49px;
     width: 55%;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 42px;
 }
 
 .article-img {
@@ -257,19 +269,29 @@ nav ul {
 
 #wrapper article:nth-child(1) .articleinfo{
     margin-left: 3px;
-    margin-top:25px;
+    margin-top:27px;
+}
+
+#wrapper article:nth-child(1) .articletext{
+    margin-left: 3px;
+    margin-top:21px;
 }
 #wrapper article:nth-child(2){
-    margin-top: 92px;
+    margin-top: 89px;
 }
 
 #wrapper article:nth-child(2) .articletitle {
     margin-left: 2px;
 }
 
+#wrapper article:nth-child(2) .articletext{
+    margin-left: 3px;
+    margin-top:21px;
+}
+
 #wrapper article:nth-child(2) .articleinfo{
     margin-left: 3px;
-    margin-top:25px;
+    margin-top:27px;
 }
 #wrapper article:nth-child(3){
     margin-top: 90px;
